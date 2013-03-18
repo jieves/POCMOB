@@ -104,10 +104,11 @@ $(document).delegate('#synchronise', 'pageinit', function() {
 					  }
 				});
 			})
-			//.error(function() { 
-			//	console.log('error function');
-			//	$('#synchro').html('Fout opgetreden tijdens oproep naar RESTful web service :(');
-			//})
+			.error(function(args) { 
+				console.log('error function');
+				//$('#synchro').html('Fout opgetreden tijdens oproep naar RESTful web service :(');
+				$('#synchro').html(args);
+			})
 			.complete(function() {
 				console.log('Download afgewerkt');
 			});
