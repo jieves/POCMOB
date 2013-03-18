@@ -9,7 +9,12 @@ This application shows a simple use case for using Apex with PhoneGap.
 </description>
 <author href="http://www.axi.nl" email="evrm@axi.nl">Erik-jan Vermaire </author>
 <!--feature name="http://api.phonegap.com/1.0/device" /> -->
+
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+
 <preference name="OpenAllWhitelistURLsInWebView" value="yes" />
+<access origin="*" />
 <preference name="phonegap-version" value="2.0.0" />
 <preference name="orientation" value="default" />
 <preference name="target-device" value="universal" />
