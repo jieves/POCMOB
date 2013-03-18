@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Poc Mobile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+    <link rel="stylesheet" href="css/idangerous.swiper.css" />
+	<link rel="stylesheet" href="css/custom-css.css"/>
+	
+	<script src="js/jquery-1.8.2.min.js"></script>
+	<script src="js/custom-scripting.js"></script>
+    <script defer src="js/idangerous.swiper-1.8.min.js"></script>
+    
+	<script src="js/jquery.mobile-1.3.0.min.js"></script>
+
+</head>
+<body>
+
+
+
+<!--<div id="menu" data-role="content">
+   <div class="ui-header ui-bar-b" height="20px"><h1 class="ui-title">Menu</h1></div>
+	<ul>
+		<li class="ui-header ui-bar-a"><a href="#home" class="contentLink">TV & audio </a></li>
+		<li class="ui-header ui-bar-a"><a href="#home" class="contentLink">Groot elektro </a></li>
+		<li class="ui-header ui-bar-a"><a href="#home" class="contentLink">Inbouw </a></li>
+		<li class="ui-header ui-bar-a"><a href="#home" class="contentLink">Multimedia </a></li>
+	</ul>
+</div>
+--> 
+
+<!-- Start of page Article List -->
+<div data-role="page" id="article_list">
+  <div data-role="header"> <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext" data-transition="fade">Home</a>
+    <h1>Kies artikel</h1>
+    <a href="#" data-rel="back" data-icon="back">Terug</a> </div>
+  <!-- /header -->
+
+  <div id="subheader" class="ui-bar-a" align="right">
+    <a href="winkelwagentje.html"><div class="knop" style="background-image: url('img/container.png')">1 artikel</div></a>
+    <!-- <a href="#"><div class="knop" style="background-image: url('img/printer.png')">afdrukken</div></a>  -->
+  </div>
+  
+  <div data-role="content"> </br>
+    <ul data-role="listview" data-inset="true" data-filter="true" id="artikelen">
+      <select name="select-choice-min" id="select-choice-min" data-mini="true" data-native-menu="false" multiple="true">
+        <option value="#" data-placeholder="true">in alle artikelgroepen</option>
+        <option value="klein">Klein elektro</option>
+        <option value="groot">Groot elektro</option>
+        <option value="inbouw">Inbouw</option>
+        <option value="multimedia">Multimedia</option>
+      </select>
+      <li data-role="list-divider">Kies een artikel</li>
+    </ul>
+  </div> <!-- /content -->
+    
+  <div data-role="footer">
+    <h4></h4>
+  </div> <!-- /footer --> 
+  
+</div> <!-- /page --> 
+
+<!-- End of page Article List --> 
+
+
+
+</body>
+</html>
